@@ -1,0 +1,29 @@
+{
+  "name": "discord-bot-builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+	"server:start": "cd server && npm run start",
+    "server:dev": "cd server && npm run dev",
+    "server:build": "cd server && npm run build",
+    "client:dev": "cd client && npm run dev",
+    "client:build": "cd client && npm run build",
+    "dev": "concurrently \"npm run client:dev\" \"npm run server:build\" \"npm run server:dev\""
+  
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burakbehlull/discord-bot-builder.git"
+  },
+  "keywords": ["discord", "discord-bot", "discord-bot-builder", "discord-bot-setup"],
+  "bugs": {
+    "url": "https://github.com/burakbehlull/discord-bot-builder/issues"
+  },
+  "homepage": "https://github.com/burakbehlull/discord-bot-builder/#readme",
+  "author": "Burak <@burakbehlull>",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
