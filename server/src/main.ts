@@ -4,7 +4,7 @@ import morgan from "morgan"
 import cors, { CorsOptions } from "cors"
 import helmet from "helmet"
 
-import { homeRoute } from "./routers/index.js"
+import { homeRoute, archiveRoute } from "./routers/index.js"
 
 const PORT = process.env.PORT || 80
 
@@ -25,6 +25,7 @@ app.use(morgan("dev"))
 app.use(helmet())
 
 app.use("/", homeRoute)
+app.use("/bot", archiveRoute)
 
 app.listen(PORT, () => {
     console.log(`Sunucu ${PORT} portunda başlatıldı.`)
