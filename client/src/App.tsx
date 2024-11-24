@@ -1,6 +1,6 @@
 import { Home } from '@pages'
-function App() {
 
+function App() {
   return (
     <>
       <Home />

@@ -1,5 +1,5 @@
-import { useRoutes } from 'react-router-dom';
-import { Home } from '@pages';
+import { useRoutes } from 'react-router-dom'
+import { Home } from '@pages'
 import App from '../App'
 
 function Routes() {
