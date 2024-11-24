@@ -11,7 +11,7 @@ class Archive {
         this.res = res
     }
     setHeaders(fileName: string){
-        this.res.setHeader('Content-Disposition', `attachment; filename=${fileName}.zip`)
+        this.res.setHeader("Content-Disposition", `attachment; filename='${fileName}'`)
         this.res.setHeader('Content-Type', 'application/zip')
     }
     createArchive(){
