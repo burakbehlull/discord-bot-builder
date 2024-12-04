@@ -11,7 +11,7 @@ const client = new Client({
     `
     }
     login(){
-        return `client.login(TOKEN).catch(console.error).then(() => console.log('Bot başarıyla başlatıldı'))`
+        return `client.login(TOKEN).catch(error=>console.error("Hata: ", error?.message)).then(() => console.log('Bot başarıyla başlatıldı'))`
     }
 
 }

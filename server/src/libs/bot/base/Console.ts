@@ -1,7 +1,7 @@
 class Console {
 
-    Install(){
-        return `npm install discord.js`
+    Installer(){
+        return `npm install`
     }
     Starter(){
         return `node index.js`
